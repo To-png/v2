@@ -1,11 +1,8 @@
 <template>    
     <a-layout-content>         
-        <div :style="{ padding: '24px', background: 'silver', height: '100%' }">
-            <h2 class='heading'>Мы открылись!</h2>            
-            <br>   
-            <br> 
-            <br> 
-            <a-row type="flex" justify="space-around" align="middle">
+        <div :style="{ padding: '24px', background: '#7998A9', height: '100%' }">
+            <h2 class='heading'>Мы открылись!</h2>               
+            <a-row type="flex" justify="space-around" align="middle" class="row">
                 <a-col :span="10">
                    <div v-for="post in allPosts" :key="post.id">                        
                         <h1>{{post.body}}</h1>
@@ -37,6 +34,10 @@
         height: 250px
     }
     .heading {
-        text-align: center
+        text-align: center;
+        padding: 30px;
+    }
+    .row {
+        padding: 20px;
     }
 </style>

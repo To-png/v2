@@ -44,7 +44,7 @@
     width: 150px;
     height: 40px;
     border-radius: 4px;
-    background-color: #077ce9;
+    background-color: #1890ff;
     color: aliceblue;
   }
 </style>

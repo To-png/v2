@@ -1,9 +1,7 @@
 <template>    
     <a-layout-content>         
-        <div :style="{ padding: '24px', background: 'silver', height: '100%' }">
-            <h2 class='heading'>Количество клиентов сегодня = {{postsCount}}</h2>
-            <hr class='line' />           
-            <br>
+        <div :style="{ padding: '24px', background: '#7998A9', height: '100%' }">
+            <h2 class='heading'>Зарегистрировано клиентов сегодня = {{postsCount}}</h2>            
              <a-row type="flex" justify="space-around" align="top">
                 <a-col :span="8">
                     <Form />
@@ -40,14 +38,16 @@
         border-color: #001529
     }
     .heading {
-        text-align: center
+        text-align: center;
+        padding: 30px;        
     }
     .post {
         display: block;
         width: 500px;
+        background-color: #fff;
         border: 1px solid #001529;
         border-radius: 4px;
-        padding: 10px;
+        padding: 30px;
         margin-bottom: 15px;
     }
 </style>
